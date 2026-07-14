@@ -2,11 +2,12 @@ from .base import Env as BaseEnv
 from .mmbase import MMEnv
 from .search import SearchEnv
 from .vision import VisionEnv
+from .arithmetic import ArithmeticEnv
 from .reward_rollout_example import RewardRolloutEnv
 
 # Define public interface for the module
 # Specifies which classes will be imported when using "from module import *"
-__all__ = ['BaseEnv', 'SearchEnv', 'RewardRolloutEnv', 'VisionEnv', 'MMEnv']
+__all__ = ['BaseEnv', 'SearchEnv', 'ArithmeticEnv', 'RewardRolloutEnv', 'VisionEnv', 'MMEnv']
 
 
 # Environment registry mapping - connects environment names to their corresponding classes
@@ -15,6 +16,7 @@ TOOL_ENV_REGISTRY = {
     'base': BaseEnv,
     'mmbase': MMEnv,
     'search': SearchEnv,
+    'arithmetic': ArithmeticEnv,
     'reward_rollout': RewardRolloutEnv,
     'vision': VisionEnv
 }

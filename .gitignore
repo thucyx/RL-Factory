@@ -109,6 +109,9 @@ tests/e2e/toy_examples/deepspeed/synchronous/output.txt
 
 # data
 *.parquet
+/data
+/models
+/rag_data
 
 
 # local logs
@@ -139,4 +142,3 @@ envs/reward_score/database/**/clean_*.csv
 **/*.tar.gz
 **/playground
 **/wandb
-
